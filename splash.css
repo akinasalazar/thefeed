@@ -1,0 +1,25 @@
+body{
+    background-image: url(/img/boarddeco.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+    cursor: url("img/cursor.png"), auto;
+}
+
+#gif{
+    margin: auto;
+    width: 400px;
+    height: auto;
+    margin-top: 200px;
+    align-items: center;
+    display: block;  
+}
+
+h1{
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+    margin-left: 650px;
+    font-family: 'Courier New', Courier, monospace;
+}
