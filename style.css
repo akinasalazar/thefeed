@@ -4,8 +4,14 @@ body{
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+*{
     cursor: url("img/cursor.png"), auto;
 }
+
 
 h2{
     margin-left: 800px;
@@ -72,15 +78,26 @@ h3{
     margin-left: 150px;
     transform: rotate(-5deg);
     position: fixed;
+    transition: transform 0.5s ease;
+}
+
+#akina:hover{
+    transform: rotate(50deg)
 }
 
 .items{
     margin-top: 200px;
+    animation: fadeIn 1s ease-in forwards;
 }
 
 .itempics{
     margin-left: 800px;
     width: 500px;
+    transition: transform 0.5s ease;
+}
+
+.itempics:hover{
+    transform: rotate(5deg)
 }
 
 .tape{
@@ -152,9 +169,21 @@ h3{
 .bio{
     margin-top: -80px;
     margin-left:40px;
+    animation: fadeIn 1s ease-in forwards;
 }
 
 .welcome{
     margin-top: 50px;
-    margin-left: 40px
+    margin-left: 40px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
